@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { karla } from '../fonts';
 
 export default function SideNav() {
   return (
