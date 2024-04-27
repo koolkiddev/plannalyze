@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { HomeIcon, AttendeeIcon, SettingsIcon } from './icons'
+import { HomeIcon, AttendeeIcon, SettingsIcon, PowerIcon } from './icons'
 
 export default function SideNav() {
   return (
@@ -21,19 +21,19 @@ export default function SideNav() {
 
       {/* nav links */}
       <div className="flex grow flex-column mb-4 text-center justify-between space-x-4 w-full p-1 md:flex-col md:space-x-0 md:space-y-4">
-        <div className="hover:bg-gray-50 w-full rounded p-2 outline outline-1 outline-slate-100">
+        <div className="w-full rounded p-2 outline outline-1 outline-slate-100">
           <Link className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3" href="/dashboard/">
             <HomeIcon />
             <p className="hidden md:block">Home</p>
           </Link>
         </div>
-        <div className="hover:bg-gray-50 w-full text-center rounded p-2 outline outline-1 outline-slate-100">
+        <div className="w-full text-center rounded p-2 outline outline-1 outline-slate-100">
           <Link className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3" href="/dashboard/attendees">
             <AttendeeIcon />
             <p className="hidden md:block">Attendees</p>
           </Link>
         </div>
-        <div className="hover:bg-gray-50 w-full sm:text-center rounded p-2 mr-2 outline outline-1 outline-slate-100">
+        <div className="w-full sm:text-center rounded p-2 mr-2 outline outline-1 outline-slate-100">
           <Link className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3" href="/dashboard/settings">
             <SettingsIcon />
             <p className="hidden md:block">Settings</p>
@@ -42,12 +42,13 @@ export default function SideNav() {
         <div className="hidden h-auto w-full grow rounded-md md:block"></div> 
       </div>
 
-      {/* sign out 
-      <div className="rounded mr-1 ml-1 outline outline-1 outline-slate-100">
-        <button className="font-bold py-2 px-2 p-2">
-          <Link href="/">Sign out</Link>
-        </button>
-      </div>*/}
+      {/* sign out */}
+      <div className="w-full sm:text-center rounded p-2 mr-2 outline outline-1 outline-slate-100">
+          <Link className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3" href="/dashboard/settings">
+            <PowerIcon />
+            <p className="hidden md:block">Sign out</p>
+          </Link>
+      </div>
     </div>
     </>
   );

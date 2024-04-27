@@ -7,14 +7,14 @@ export default async function AttendeesView() {
         <div className="">
           {attendees.map((attendee, i) => {
             return (
-              <div key={attendee.id} className="w-full hover:shadow-md transition-all rounded overflow-hidden mb-2 py-4 px-6 outline outline-1 outline-slate-100 shadow-lg">
+              <div key={attendee.id} className="w-full hover:shadow-md transition-all rounded mb-2 py-4 px-6 outline outline-1 outline-slate-100 shadow-lg">
                 <div className='flex flex-row items-center justify-between py-4'>
                     <div className="flex items-center">
                     <div className="min-w-0">
-                        <p className="truncate text-sm font-semibold md:text-base">
+                        <p className="truncate text-base font-semibold md:text-base ">
                         {attendee.name}
                         </p>
-                        <p className="hidden text-sm text-gray-500 sm:block">
+                        <p className="text-sm text-gray-500 sm:block">
                         {attendee.email}
                         </p>
                     </div>
