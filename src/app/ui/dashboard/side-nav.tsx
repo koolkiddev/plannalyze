@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import { HomeIcon, AttendeeIcon, SettingsIcon } from './icons'
 
 export default function SideNav() {
   return (
+    <>
     <div className="flex h-full flex-col px-3 py-4 md:px-2 outline outline-1 outline-slate-100">
       {/* title */}
       <div className="rounded mb-4 mr-1 ml-1 outline outline-1 outline-slate-100">
@@ -18,25 +20,35 @@ export default function SideNav() {
       </div> 
 
       {/* nav links */}
-      <div className="flex grow flex-row mb-4 mr-1 ml-1 justify-between space-x-4 md:flex-col md:space-x-0 md:space-y-4">
-        <div className="hover:bg-gray-50 rounded p-2 outline outline-1 outline-slate-100">
-          <Link className="w-full font-bold py-2 p-2 mb-auto rounded-xl" href="/dashboard/">Home</Link>
+      <div className="flex grow flex-column mb-4 text-center justify-between space-x-4 w-full p-1 md:flex-col md:space-x-0 md:space-y-4">
+        <div className="hover:bg-gray-50 w-full rounded p-2 outline outline-1 outline-slate-100">
+          <Link className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3" href="/dashboard/">
+            <HomeIcon />
+            <p className="hidden md:block">Home</p>
+          </Link>
         </div>
-        <div className="hover:bg-gray-50 rounded p-2 outline outline-1 outline-slate-100">
-          <Link className="w-full font-bold py-2 p-2 mb-auto rounded" href="/dashboard/attendees">Attendees</Link>
+        <div className="hover:bg-gray-50 w-full text-center rounded p-2 outline outline-1 outline-slate-100">
+          <Link className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3" href="/dashboard/attendees">
+            <AttendeeIcon />
+            <p className="hidden md:block">Attendees</p>
+          </Link>
         </div>
-        <div className="hover:bg-gray-50 rounded p-2 outline outline-1 outline-slate-100">
-          <Link className="w-full font-bold py-2 p-2 mb-auto rounded" href="/dashboard/">Settings</Link>
+        <div className="hover:bg-gray-50 w-full sm:text-center rounded p-2 mr-2 outline outline-1 outline-slate-100">
+          <Link className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3" href="/dashboard/settings">
+            <SettingsIcon />
+            <p className="hidden md:block">Settings</p>
+          </Link>
         </div>
         <div className="hidden h-auto w-full grow rounded-md md:block"></div> 
       </div>
 
-      {/* sign out */}
+      {/* sign out 
       <div className="rounded mr-1 ml-1 outline outline-1 outline-slate-100">
         <button className="font-bold py-2 px-2 p-2">
           <Link href="/">Sign out</Link>
         </button>
-      </div>
+      </div>*/}
     </div>
+    </>
   );
 }
