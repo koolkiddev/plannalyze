@@ -22,7 +22,7 @@ export default function Form() {
         </div>
 
         <div className="mb-4 md:px-4">
-          <label htmlFor="date_rsvp" className="m-2 block mb-2 text-sm font-medium">Date RSVP'd</label>
+          <label htmlFor="date_rsvp" className="m-2 block mb-2 text-sm font-medium">Date RSVP&apos;d</label>
           <input type="date" id="date_rsvp" name="date_rsvp" className="m-2 outline outline-1 outline-slate-200 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required />
         </div>
 

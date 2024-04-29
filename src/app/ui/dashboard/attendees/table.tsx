@@ -21,7 +21,7 @@ export default async function AttendeesView() {
                   Phone
               </th>
               <th scope="col" className="py-3 pr-3">
-                  Date RSVP'd
+                  Date RSVP&apos;d
               </th>
               <th scope="col" className="py-3">
                   Ticket Status
