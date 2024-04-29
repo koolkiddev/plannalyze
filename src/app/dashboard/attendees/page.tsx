@@ -1,4 +1,4 @@
-import AttendeesView from '@/app/ui/dashboard/attendees/attendees';
+import AttendeesView from '@/app/ui/dashboard/attendees/table';
 import Link from 'next/link';
 
 export default async function Page() {
