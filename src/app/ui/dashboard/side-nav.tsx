@@ -35,7 +35,7 @@ export default function SideNav() {
                 'bg-sky-100 text-blue-600': pathname === "/dashboard",
               }, 
             )} href="/dashboard">
-            <AddIcon />
+            <HomeIcon />
             <p className="hidden md:block">Home</p>
           </Link>
         </div>
@@ -48,7 +48,7 @@ export default function SideNav() {
                 'bg-sky-100 text-blue-600': pathname === "/dashboard/attendees",
               }, 
             )} href="/dashboard/attendees">
-            <AddIcon />
+            <AttendeeIcon />
             <p className="hidden md:block">Attendees</p>
           </Link>
         </div>
