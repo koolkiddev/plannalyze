@@ -26,7 +26,7 @@ export async function addAttendee(formData: FormData) {
 
   await sql`
     INSERT INTO "Attendee" (name, phone, email, date_rsvp)
-    VALUES (${name}, ${phone}, ${email}, ${date_rsvp})
+    VALUES (${name}, ${phone}, ${email}, ${date_rsvp.toDateString()})
   `;
 
   redirect("/dashboard/attendees");
