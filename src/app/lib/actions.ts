@@ -19,7 +19,7 @@ export async function addAttendee(formData: FormData) {
     name: formData.get("name") as string,
     email: formData.get("email") as string,
     phone: formData.get("phone") as string,
-    date_rsvp: new Date(formData.get("date_rsvp")),
+    date_rsvp: new Date(formData.get("date_rsvp") as string),
   });
 
   const date = new Date().toISOString().split('T')[0];
