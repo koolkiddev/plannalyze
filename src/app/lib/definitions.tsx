@@ -4,5 +4,4 @@ export type Attendee = {
     phone: string;
     email: string;
     date_rsvp: string;
-    ticket_status: 'pending' | 'paid';
 };

@@ -23,9 +23,6 @@ export default async function AttendeesView() {
               <th scope="col" className="py-3 pr-3">
                   Date RSVP&apos;d
               </th>
-              <th scope="col" className="py-3">
-                  Ticket Status
-              </th>
             </tr>
           </thead>
           <tbody>
@@ -44,11 +41,8 @@ export default async function AttendeesView() {
                 <td className="py-4 pr-3">
                   {attendee.date_rsvp.toISOString().substring(0, 10)}
                 </td>
-                <td className="py-4 pr-3">
-                  {attendee.ticket_status.toString()}
-                </td>
               </tr>
-              )})};
+              )})}
           </tbody>
         </table>
       </div>

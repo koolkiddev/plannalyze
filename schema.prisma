@@ -9,5 +9,4 @@ model Attendee {
     email String 
     phone String
     date_rsvp DateTime
-    ticket_status Boolean @default(false)
 }
