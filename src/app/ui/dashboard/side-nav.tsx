@@ -28,7 +28,7 @@ export default function SideNav() {
       {/* nav links */}
       <div className="flex grow flex-column mb-4 text-center justify-between space-x-4 w-full p-1 md:flex-col md:space-x-0 md:space-y-4">
         {/* home link */}
-        <div className="w-full rounded p-2 outline outline-1 outline-slate-100">
+        <div className="w-full sm:text-center rounded p-2 mr-2 outline outline-1 outline-slate-100">
           <Link className={clsx(
               'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
               {
@@ -41,7 +41,7 @@ export default function SideNav() {
         </div>
 
         {/* attendees link */}
-        <div className="w-full text-center rounded p-2 outline outline-1 outline-slate-100">
+        <div className="w-full sm:text-center rounded p-2 mr-2 outline outline-1 outline-slate-100">
           <Link className={clsx(
               'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
               {
