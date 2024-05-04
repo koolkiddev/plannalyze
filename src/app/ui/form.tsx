@@ -52,7 +52,11 @@ function LoginButton() {
    
     return (
       <button className="transition shadow-lg flex w-full justify-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600" aria-disabled={pending}>
-        Log in <ArrowRightIcon className="inline h-5 w-5 text-gray-50" />
+        Log in
+        <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="2" stroke="currentColor" className="inline w-5 h-5 ml-1">
+            <path d="M5 12h14M12 5l7 7-7 7">
+            </path>
+        </svg>
       </button>
     );
   }
